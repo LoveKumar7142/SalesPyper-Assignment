@@ -1,22 +1,68 @@
-# Sales Dashboard
+# SalesPyper – Multi-Tenant Sales Dashboard
 
-A modern sales management dashboard built with React, TypeScript, and Vite. This application allows users to manage leads, view call logs, and switch between different tenants and roles for a multi-tenant sales environment.
+## Overview
+SalesPyper is a frontend-only multi-tenant sales dashboard built as part of an internship assignment.
+The application simulates a SaaS platform used by multiple organizations with role-based access.
 
-## Features
+Backend APIs are not used. All data and authentication are mocked on the frontend.
 
-- **Lead Management**: View and manage sales leads with status tracking (new, contacted, closed)
-- **Call Logs**: Display and track customer call interactions
-- **Authentication**: Multi-tenant support with role-based access (Admin/Agent)
-- **Responsive Design**: Built with Tailwind CSS for a clean, modern UI
-- **Type-Safe**: Fully typed with TypeScript for better development experience
+---
 
 ## Tech Stack
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- React Context API
 
-- **Frontend**: React 19, TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **Linting**: ESLint with TypeScript support
-- **State Management**: React Context API
+---
+
+## Tenancy Handling
+- The application supports multiple tenants (Organization A & Organization B).
+- Each tenant sees only its own leads and call logs.
+- Switching tenants dynamically updates the visible data.
+
+---
+
+## Role-Based Access
+- **Admin**: Can view all data and sees edit actions.
+- **Agent**: View-only access.
+- Role permissions are applied within the selected tenant.
+
+---
+
+## Core Modules
+
+### Leads Module
+- Tenant-specific lead listing
+- Status-based filtering
+- Role-based UI actions
+
+### Call Logs Module
+- Tenant-specific call logs
+- Scrollable table with sticky header
+
+---
+
+## Frontend Architecture
+- Modular folder structure
+- Reusable layout components (Sidebar, Header)
+- Feature-based modules (Leads, Call Logs)
+- Centralized state management using Context API
+
+---
+
+## Performance & Optimization
+- Lazy loading of feature modules using React.lazy and Suspense
+- Code splitting to reduce initial bundle size
+- Scroll isolation for better UX in data-heavy views
+
+---
+
+## Notes
+This assignment focuses on frontend structure, modularity, and application behavior.
+Backend APIs are intentionally excluded as per the assignment instructions.
+
+---
 
 ## Installation
 
