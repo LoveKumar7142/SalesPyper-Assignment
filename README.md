@@ -80,7 +80,7 @@ src/
 ## Developer Information
 
 - **Developer**: Love Kumar
-- **Email**: lovekumar714283
+- **Email**: lovekumar714283@gmail.com
 - **Company**: SalesPyper
 - **Assignment Source**: Internshala
 
